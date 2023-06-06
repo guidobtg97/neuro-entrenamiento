@@ -110,6 +110,25 @@
   margin: 0; /* Eliminar el margen superior e inferior del h2 */
 }
 
+#program-info h3 {
+  color: #2596be;
+  font-size: 29px;
+  margin-top: 25px;
+  line-height: 1.2;
+}
+
+#program-info ul {
+  text-align: left; /* Alinear el texto a la izquierda */
+  margin-top: 25px;
+  padding-left: 20px; /* Añadir un espacio a la izquierda para acercar el texto al punto de inicio */
+}
+
+#program-info li {
+  font-size: 22px;
+  list-style-type: disc; /* Utilizar viñeta de un punto negro */
+  margin-bottom: 10px; /* Añadir un espacio entre los items de la lista */
+}
+
 /* Consulta de medios para pantallas de 400px o menos */
 @media (max-width: 400px) {
   #program-info {
