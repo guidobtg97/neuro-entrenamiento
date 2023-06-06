@@ -43,3 +43,30 @@
       padding: 0 10px 5px; /* Reducción adicional del padding para pantallas de celular */
     }
   }
+
+
+
+  /*    ===== VIDEO BAJO HEADER =====      */
+/* ===== VIDEO BAJO HEADER ===== */
+
+#video-container {
+  background-color: #222222; /* Negro grisáceo como color de fondo */
+  text-align: center; /* Centrar el contenido */
+  width: 100%;
+  height: 400px;
+}
+
+#video-container iframe {
+  padding: 30px; 
+  display: block; /* Mostrar el iframe como bloque para centrarlo correctamente */
+  margin: 0 auto; /* Centrar horizontalmente el iframe */
+  width: 90%; /* Ajustar el ancho del video al 90% del contenedor */
+  height: 100%; /* Permitir que la altura del video se ajuste automáticamente */
+}
+
+/* Consulta de medios para pantallas de 400px o menos */
+@media (max-width: 400px) {
+  #video-container {
+    padding: 10px; /* Añadir un poco de espacio alrededor del video en pantallas más pequeñas */
+  }
+}
