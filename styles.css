@@ -8,8 +8,7 @@
     width: 100%;
     max-width: 100%; /* Ancho máximo ajustable */
     margin: 0 auto; /* Centrar el contenedor */
-   
-    background-color: #f0f0f0;
+  
   }
   
   /* Estilos para pantallas de celular */
@@ -53,7 +52,8 @@
   background-color: #222222; /* Negro grisáceo como color de fondo */
   text-align: center; /* Centrar el contenido */
   width: 100%;
-  height: 400px;
+  height: 540px;
+  overflow: hidden; /* Ocultar el contenido que se desborde del contenedor */
 }
 
 #video-container iframe {
@@ -68,5 +68,52 @@
 @media (max-width: 400px) {
   #video-container {
     padding: 10px; /* Añadir un poco de espacio alrededor del video en pantallas más pequeñas */
+    height: auto; /* Permitir que la altura del contenedor se ajuste automáticamente */
+    position: relative; /* Establecer la posición relativa para el contenedor */
+  }
+
+  #video-container::before {
+    content: ""; /* Agregar un contenido pseudo-elemento */
+    display: block;
+    position: absolute; /* Establecer la posición absoluta para cubrir el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222; /* Negro grisáceo como color de fondo */
+    z-index: -1; /* Colocar el pseudo-elemento detrás del contenido */
+  }
+
+  #video-container iframe {
+    width: 100%; /* Ajustar el ancho del video al 100% del contenedor en pantallas pequeñas */
+    height: 100%; /* Ajustar la altura del video al 100% del contenedor en pantallas pequeñas */
+    object-fit: cover; /* Cubrir todo el espacio disponible del contenedor */
+  }
+}
+
+
+
+/*    INFO DEL PROGRAMA    */
+
+#program-info {
+  width: 100%; /* Ancho del contenedor al 100% en pantallas grandes */
+  max-width: 950px; /* Ancho máximo del contenedor */
+  margin: 10px auto; /* Centrar horizontalmente el contenedor */
+  text-align: center; /* Centrar el texto en el contenedor */
+  padding: 0 20px; /* Añadir un poco de espacio alrededor del contenedor */
+}
+
+#program-info h2 {
+  line-height: 0.9; /* Ajustar el espaciado entre líneas */
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0; /* Eliminar el margen superior e inferior del h2 */
+}
+
+/* Consulta de medios para pantallas de 400px o menos */
+@media (max-width: 400px) {
+  #program-info {
+    width: 100%; /* Ancho del contenedor al 100% en pantallas pequeñas */
+    padding: 10px; /* Añadir un poco de espacio alrededor del contenedor en pantallas más pequeñas */
   }
 }
