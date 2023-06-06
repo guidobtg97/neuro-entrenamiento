@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos para el contenedor padre */
+#father-container {
+    width: 100%;
+    max-width: 100%; /* Ancho máximo ajustable */
+    margin: 0 auto; /* Centrar el contenedor */
+   
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para pantallas de celular */
+  @media (max-width: 400px) {
+    #father-container {
+      max-width: 100%; /* Ancho máximo ajustable para pantallas de celular */
+      padding: 10px;
+    }
+  }
+
+  header {
+    padding: 10px 50px; /* 50px de padding izquierdo y derecho, 5px de padding inferior */
+    color: white;
+    background-color: #2596be;
+    font-size: 14px;
+  }
+
+  header h1{
+    text-align: center; /* Centrar el texto */
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 0 20px 5px; /* Reducción del padding para pantallas más pequeñas */
+    }
+  }
+  
+  /* Consulta de medios para pantallas de 400px o menos */
+  @media (max-width: 400px) {
+    header {
+      padding: 0 10px 5px; /* Reducción adicional del padding para pantallas de celular */
+    }
+  }
