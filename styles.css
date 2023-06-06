@@ -159,10 +159,11 @@
   display: flex; /* Utilizar el modelo de caja flexible para alinear las imágenes */
   align-items: center; /* Centrar las imágenes verticalmente */
   text-align: center; /* Centrar las imágenes horizontalmente */
+  margin-bottom: 25px;
 }
 
 #img-container-2 img {
-  width: 360px;
+  width: 390px;
   height: 270px;
   display: block;
   margin: 0 auto;
@@ -176,3 +177,41 @@
   color: #2596be;
 }
 
+#benefits{
+  height: auto;
+  width: 100%;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+ 
+}
+
+#benefits h2{
+  padding-top: 20px;
+  font-weight: 1500;
+  font-size: 32px;
+}
+
+#benefits ul {
+  justify-content: center;
+  text-align: center; /* Alinear el texto a la izquierda */
+  margin-top: 25px;
+  padding-left: 20px; /* Añadir un espacio a la izquierda para acercar el texto al punto de inicio */
+  padding-bottom: 15px;
+}
+
+#benefits li {
+  margin-top: 10px; /* Espacio superior entre elementos de la lista */
+  margin-bottom: 10px; /* Espacio inferior entre elementos de la lista */
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 22px;
+  list-style-type: none; /* Utilizar viñeta de un punto negro */
+  
+}
+
+#benefits li::before {
+  content: '\2713'; /* Código unicode para el símbolo de tilde */
+  color: green; /* Color verde para el símbolo */
+  margin-right: 5px; /* Espacio entre el símbolo y el texto */
+}
