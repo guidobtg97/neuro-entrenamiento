@@ -155,12 +155,15 @@
 }
 
 #img-container-2 {
-  text-align: center;
+  text-align: center; margin-top: 25px;
+  display: flex; /* Utilizar el modelo de caja flexible para alinear las imágenes */
+  align-items: center; /* Centrar las imágenes verticalmente */
+  text-align: center; /* Centrar las imágenes horizontalmente */
 }
 
 #img-container-2 img {
-  width: 400px;
-  height: auto;
+  width: 360px;
+  height: 270px;
   display: block;
   margin: 0 auto;
 }
