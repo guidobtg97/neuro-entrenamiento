@@ -136,3 +136,40 @@
     padding: 10px; /* Añadir un poco de espacio alrededor del contenedor en pantallas más pequeñas */
   }
 }
+
+
+#img-container-1 {
+  margin-top: 25px;
+  display: flex; /* Utilizar el modelo de caja flexible para alinear las imágenes */
+  flex-wrap: wrap; /* Permitir que las imágenes se envuelvan a una nueva línea cuando no haya suficiente espacio */
+  justify-content: space-between;
+  align-items: center; /* Centrar las imágenes verticalmente */
+  text-align: center; /* Centrar las imágenes horizontalmente */
+}
+
+#img-container-1 img {
+  width: 300px; /* Ancho de la imagen */
+  height: 300px; /* Altura de la imagen */
+  margin: 0 auto; /* Centrar horizontalmente las imágenes */
+  margin-bottom: 10px; /* Espacio inferior entre las imágenes */
+}
+
+#img-container-2 {
+  text-align: center;
+}
+
+#img-container-2 img {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#program-info p{
+  margin-top: 25px;
+  font-size: 22px;
+}
+#program-info span{
+  color: #2596be;
+}
+
