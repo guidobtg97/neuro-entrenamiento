@@ -470,5 +470,143 @@ button a {
   }
 }
 
+#bonos-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+#bono {
+  width: 40%;
+  max-width: 270px;
+  margin: 45px;
+  margin-bottom: 80px;
+  text-align: center;
+  height: auto; /* Altura fija para los elementos #bono */
+}
+
+#bono img {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajustar la imagen dentro del contenedor sin deformarla */
+  object-position: center; /* Centrar la imagen dentro del contenedor */
+}
+
+#bono h3,
+#bono p {
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  #bonos-container {
+    justify-content: flex-start;
+   
+  }
+  
+  #bono {
+    margin-top: 100px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #bonos-container {
+    
+    justify-content: center;
+  }
+}
 
 
+#offerfn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#offerfn img {
+  width: 550px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #offerfn img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#countdown span {
+  font-size: 70px;
+  color: yellow;
+}
+
+#countdown .separator {
+  font-size: 70px;
+  color: yellow;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+@media (max-width: 480px) {
+  #countdown span {
+    font-size: 45px;
+  }
+  #countdown .separator{
+    font-size: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  }
+
+
+  .progress-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .progress-bar {
+    width: 1100px;
+    background-color: #f2f2f2;
+    height: 18px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: rgb(233, 46, 46);
+    width: 87%; /* Ajusta el ancho según el porcentaje deseado */
+  }
+  
+  .percentage {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .progress-bar {
+      width: 60%; /* Ajusta el ancho según tus necesidades */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .progress-bar {
+      width: 70%; /* Ajusta el ancho según tus necesidades */
+    }
+  }
