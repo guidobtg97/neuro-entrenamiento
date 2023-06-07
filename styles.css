@@ -190,6 +190,7 @@
   padding-top: 20px;
   font-weight: 1500;
   font-size: 32px;
+
 }
 
 #benefits ul {
@@ -214,4 +215,125 @@
   content: '\2713'; /* Código unicode para el símbolo de tilde */
   color: green; /* Color verde para el símbolo */
   margin-right: 5px; /* Espacio entre el símbolo y el texto */
+}
+
+#learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#learning h1,
+#learning h3 {
+  text-align: center;
+}
+
+#bloque-1,
+#bloque-2,
+#bloque-3 {
+  width: 900px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#bloque-1 > div,
+#bloque-2 > div,
+#bloque-3 > div {
+  flex: 1;
+}
+
+#bloque-1 > div img,
+#bloque-2 > div img,
+#bloque-3 > div img {
+  max-width: 300px;
+  height: auto;
+  margin-top: 25px;
+}
+
+#bloque-1 h2,
+#bloque-2 h2,
+#bloque-3 h2 {
+  text-align: right;
+}
+
+#bloque-1 ul,
+#bloque-2 ul,
+#bloque-3 ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#bloque-1 ul li,
+#bloque-2 ul li,
+#bloque-3 ul li {
+  position: relative;
+  padding-left: 20px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+#bloque-1 ul li::before,
+#bloque-2 ul li::before,
+#bloque-3 ul li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* Ajuste para pantallas de smartphone */
+@media screen and (max-width: 414px) {
+  #bloque-1,
+  #bloque-2,
+  #bloque-3 {
+    flex-direction: column;
+    align-items: center;
+    width: auto; /* Ajustar el ancho a automático */
+  }
+
+  #bloque-1 > div,
+  #bloque-2 > div,
+  #bloque-3 > div {
+    max-width: 100%;
+    
+  }
+
+  #bloque-1 > div img,
+  #bloque-2 > div img,
+  #bloque-3 > div img {
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+
+  #bloque-1 h2,
+  #bloque-2 h2,
+  #bloque-3 h2 {
+    text-align: center;
+    font-size: 20px; /* Ajustar el tamaño de fuente */
+  }
+
+  #bloque-1 ul,
+  #bloque-2 ul,
+  #bloque-3 ul {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  #bloque-3 ul li {
+    
+    padding-left: 0;
+  }
+
+  #bloque-3 ul li::before {
+    left: -15px;
+  }
 }
