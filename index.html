@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/712725c422.js" crossorigin="anonymous"></script>
     <script>
-        function isMobileDevice() {
-          return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-        }
-        
-        if (isMobileDevice()) {
-          document.body.style.width = '420px';
-        }
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2032896073769284');
+        fbq('track', 'PageView');
       </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2032896073769284&ev=PageView&noscript=1"
+      /></noscript>
     <script>
         window.addEventListener('scroll', function() {
           var whatsappButton = document.getElementById('whatsapp');
