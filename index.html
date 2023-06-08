@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/712725c422.js" crossorigin="anonymous"></script>
     <script>
+        function isMobileDevice() {
+          return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+        
+        if (isMobileDevice()) {
+          document.body.style.width = '420px';
+        }
+      </script>
+    <script>
         window.addEventListener('scroll', function() {
           var whatsappButton = document.getElementById('whatsapp');
           var scrollY = window.scrollY || window.pageYOffset;
@@ -153,7 +162,7 @@
             <h1>PUEDES COMPRAR DIRECTAMENTE O ESCRIBIRNOS POR WHATSAPP</h1>
             <h3>Utiliza el boton que esta abajo en el margen izquierdo</h3>
             <div id="button-container">
-                <button><a href="https://go.hotmart.com/R83394242W?ap=7f00" target="_blank"><strong>¡INSCRÍBETE AL PROGRAMA AQUÍ!</strong></a></button>
+                <button><a href="https://api.whatsapp.com/send?phone=542922492190&text=" target="_blank"><strong>¡INSCRÍBETE AL PROGRAMA AQUÍ!</strong></a></button>
             </div>
 
             <h1>¡Y AÚN HAY MÁS<br>POR TU COMPRA RECIBIRÁS LOS SIGUIENTES <span>BONOS GRATIS</span></h1>
@@ -190,7 +199,7 @@
             <p>ACCESO INMEDIATO</p>
 
             <div id="button-container">
-                <button><a href="https://go.hotmart.com/R83394242W?ap=7f00" target="_blank"><strong>¡APROVECHA LA OFERTA!</strong></a></button>
+                <button><a href="https://api.whatsapp.com/send?phone=542922492190&text=" target="_blank"><strong>¡APROVECHA LA OFERTA!</strong></a></button>
             </div>
             <h1>ESTA OFERTA TERMINA EN</h1>
             <div id="countdown"></div>
@@ -259,7 +268,7 @@
             <p>ACCESO INMEDIATO</p>
             <div id="x">
                 <div id="button-container">
-                    <button><a href="https://go.hotmart.com/R83394242W?ap=7f00" target="_blank"><strong>¡APROVECHA LA OFERTA!</strong></a></button>
+                    <button><a href="https://api.whatsapp.com/send?phone=542922492190&text=" target="_blank"><strong>¡APROVECHA LA OFERTA!</strong></a></button>
                     
                 </div>
             </div>
