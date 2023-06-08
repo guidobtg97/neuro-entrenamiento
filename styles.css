@@ -611,12 +611,11 @@ button a {
     }
   }
 
-  #inside-program{
+
+  #inside-program h1, h2{
     
     margin-top: 30px;
-  }
-
-  #inside-program h1{
+    margin-bottom: 25px;
     text-align: center;
   }
 
@@ -705,6 +704,174 @@ button a {
   
     #info-profesor p {
       font-size: 18px;
+    }
+  }
+
+  #entrenados{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  #entrenados img{
+    margin: 10px;
+    width: 30%;
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    #entrenados {
+      display: flex;
+      flex-direction: column;
+      margin-left: 45px;
+      margin-right: auto;
+    }
+  
+    #entrenados img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+    }
+  }
+
+  #certificado-preguntas{
+    background-color: #000;
+    text-align: center;
+    color: white;
+   
+  }
+
+  #certificado-preguntas h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #certificado-preguntas img{
+    width: 550px;
+    height: auto;
+  }
+
+  #frecuentes {
+    margin-left: 20px;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pregunta {
+    width: 800px;
+    padding: 10px 0;
+    border: 1px solid white;
+    background-color: #d66464;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    font-size: 25px;
+  }
+  
+  .pregunta.expandida {
+    height: auto;
+  }
+  
+  .respuesta {
+    font-size: 25px;
+    padding: 10px;
+    height: auto;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-bottom: 20px; /* Agrega espacio entre preguntas */
+  }
+  
+  .pregunta.expandida .respuesta {
+    display: block;
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+  
+    #certificado-preguntas img {
+      width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    }
+  
+    #frecuentes {
+      height: auto; /* Ajustar la altura automáticamente en dispositivos móviles */
+      margin-top: 20px; /* Reducir el margen superior en dispositivos móviles */
+    }
+  
+    .pregunta {
+      width: 90%; /* Reducir el ancho de las preguntas en dispositivos móviles */
+      font-size: 20px; /* Reducir el tamaño de fuente en dispositivos móviles */
+    }
+  
+    .respuesta {
+      font-size: 20px; /* Reducir el tamaño de fuente en dispositivos móviles */
+      margin-bottom: 10px; /* Reducir el margen inferior en dispositivos móviles */
+    }
+  }
+  
+  #x{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+ 
+
+
+  #footer {
+    margin-top: 50px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px auto;
+  }
+  
+  #garantia,
+  #politica,
+  #compra-segura {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  
+  #garantia img{
+    width: 250px;
+  }
+  
+  #politica h3,
+  #politica p {
+    text-align: center;
+  }
+  
+  #footer-text {
+    width: 100%;
+  }
+  
+  @media (max-width: 414px) {
+    #footer {
+      width: 100%;
+      text-align: center;
+    }
+  
+    #garantia,
+    #politica,
+    #compra-segura {
+      font-size: 16px;
+      padding: 10px ;
+      flex-basis: 100%;
+      margin-bottom: 20px; /* Ajusta el margen inferior según tus preferencias */
+    }
+  
+    #politica,
+    #footer-text {
+      margin-left: 30px;
+      margin-right: 20px;
     }
   }
   
