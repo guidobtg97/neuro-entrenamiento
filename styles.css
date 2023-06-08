@@ -875,3 +875,35 @@ button a {
     }
   }
   
+  #whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+    font-size: 70px;
+  }
+  
+  #whatsapp:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 768px) {
+    #whatsapp {
+      font-size: 50px;
+      bottom: 20px;
+      margin-left: 20px;
+      position: sticky;
+      position: -webkit-sticky;
+      display: none; /* Ocultar el botón por defecto en dispositivos móviles */
+    }
+  }
+  
+  
+
+  
+  #father-container {
+    max-width: 100%;
+  }
+  

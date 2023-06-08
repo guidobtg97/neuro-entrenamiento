@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/712725c422.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+          var whatsappButton = document.getElementById('whatsapp');
+          var scrollY = window.scrollY || window.pageYOffset;
+          
+          if (scrollY > 0) {
+            whatsappButton.style.display = 'block';
+          } else {
+            whatsappButton.style.display = 'none';
+          }
+        });
+        </script>
 
     <title>Cursos</title>
 </head>
@@ -138,10 +150,12 @@
             </div>
             <p>PAGÁ EN TU MONEDA LOCAL</p>
             <p>ACCESO INMEDIATO</p>
-
+            <h1>PUEDES COMPRAR DIRECTAMENTE O ESCRIBIRNOS POR WHATSAPP</h1>
+            <h3>Utiliza el boton que esta abajo en el margen izquierdo</h3>
             <div id="button-container">
                 <button><a href="https://go.hotmart.com/R83394242W?ap=7f00" target="_blank"><strong>¡INSCRÍBETE AL PROGRAMA AQUÍ!</strong></a></button>
             </div>
+
             <h1>¡Y AÚN HAY MÁS<br>POR TU COMPRA RECIBIRÁS LOS SIGUIENTES <span>BONOS GRATIS</span></h1>
             <div id="bonos-container">
                 <div id="bono">
@@ -270,6 +284,12 @@
                 </p>
             </div>
         </div>
+        <div id="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=542922492190&text=" target="_blank">
+              <i class="fa-brands fa-whatsapp" style="color: #30bb32;"></i>
+            </a>
+          </div>
+       
 
     </div>
    <script src="script.js"></script>
